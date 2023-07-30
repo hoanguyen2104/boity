@@ -8,6 +8,7 @@
     overflow: hidden;
 }
 .content {
+    overflow-y: scroll;
     height: 100vh;
     padding: 10px 25px;
     background-image: url('https://cdn.glitch.global/3a03aad6-0dd0-4c7f-bee5-32acf31fffed/boi-tinh-yeu-banner.jpg?v=1690686148579');

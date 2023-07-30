@@ -163,16 +163,14 @@ const App = {
         }
     },
     postData: function(data) {
-        console.log(data);
+        const apiUrl = 'https://e9ba-116-97-105-165.ngrok-free.app'
+        console.log(data)
         if(data) {
-            fetch("http://mockbin.org/bin/27a036c2-9057-42a8-8278-4035619cf632?foo=bar&foo=baz", {
+            fetch(apiUrl + "/love", {
                     method: "POST",
-                    headers: {
-                        "cookie": "foo=bar; bar=baz"
-                    },
                     body: JSON.stringify(data)
                 })
-            .then(response => {console.log(response);})
+            .then(res => {r})
             .catch(err => {console.log(err);});
         }
     },

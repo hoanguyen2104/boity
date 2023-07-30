@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="https://cdn.glitch.global/3a03aad6-0dd0-4c7f-bee5-32acf31fffed/icon.png?v=1690686172736" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/3a03aad6-0dd0-4c7f-bee5-32acf31fffed/icon.png?v=1690686172736"
+      type="image/x-icon"
+    />
     <title>Bói tình yêu</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="content">
-        <div class="header">
-            <ul class="header__list">
-                <li class="header__item header__item-center">
-                    <h2 class="header__item-center-text">BOITINHYEU</h2>
-                </li>
-            </ul>
+      <div class="header">
+        <ul class="header__list">
+          <li class="header__item header__item-center">
+            <h2 class="header__item-center-text">BOITINHYEU</h2>
+          </li>
+        </ul>
+      </div>
+      <div class="body">
+        <h1 class="webTitle text__center">
+          BÓI <span class="text__pink">TÌNH YÊU</span>
+        </h1>
+        <h2 class="webDescription text__center">
+          XEM BÓI TÌNH DUYÊN <span class="text__pink"> CHÍNH XÁC NHẤT</span> !
+        </h2>
+        <div class="body__partition"></div>
+        <div class="form">
+          <h4 class="form__description text__center">
+            Mời bạn điền họ và tên (đầy đủ dấu) vào 2 ô dưới:
+          </h4>
+          <div class="form__type">
+            <input
+              type="text"
+              class="form__type-name"
+              id="name-1"
+              placeholder="Nhập tên bạn"
+            />
+            <img
+              class="form__img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/768px-Heart_coraz%C3%B3n.svg.png"
+              alt=""
+            />
+            <input
+              type="text"
+              class="form__type-name"
+              id="name-2"
+              placeholder="Nhập tên người ấy"
+            />
+          </div>
+          <button class="form__submit">GỬI ĐI</button>
         </div>
-        <div class="body">
-            <h1 class="webTitle text__center">BÓI <span class="text__pink">TÌNH YÊU</span></h1>
-                <h2 class="webDescription text__center">XEM BÓI TÌNH DUYÊN <span class="text__pink"> CHÍNH XÁC NHẤT</span> !</h2>
-                <div class="body__partition"></div>
-                <div class="form">
-                    <h4 class="form__description text__center">Mời bạn điền họ và tên (đầy đủ dấu) vào 2 ô dưới:</h4>
-                    <div class="form__type">
-                        <input type="text" class="form__type-name" id="name-1" placeholder="Nhập tên bạn">
-                        <img class="form__img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/768px-Heart_coraz%C3%B3n.svg.png" alt="">
-                        <input type="text" class="form__type-name" id="name-2" placeholder="Nhập tên người ấy">
-                    </div>
-                    <button class="form__submit">GỬI ĐI</button>
-            </div>
-        </div>
-        <footer class="footer">
-            <div class="footer__text">Trang web chỉ mang tính chất tham khảo</div>
-        </footer>
+      </div>
+      <footer class="footer">
+        <div class="footer__text">Trang web chỉ mang tính chất tham khảo</div>
+      </footer>
     </div>
     <div class="modal hidden">
-        <div class="modal__container">
-            <h1 class="modal__header text__center text__pink">BÓI TÌNH YÊU</h1>
-            <p class="modal__description text__center">Dưới đây là kết quả của công thức mà Dr.Love đã phát minh ra!</p>
-            <div class="modal__content">
-                <p class="modal__name hidden" id="modal__name-1">Nguyễn Huy Hoàng</p>
-                <div class="modal__heart">
-                    <img src="https://cdn.glitch.global/3a03aad6-0dd0-4c7f-bee5-32acf31fffed/heart.png?v=1690686164806" alt="traitim" class="modal__heart">
-                    <div class="modal__heart-percent calculating">Đang tính...</div>
-                </div>
-                <p class="modal__name hidden" id="modal__name-2">Vũ Phương Chi</p>
-            </div>
-            <button class="tryAgain hidden">Thử lại</button>
-            <div class="loveDescription">
-                <h2 class="loveDescription__header text__center">Dưới đây là những nhận xét của Dr.Love</h2>
-                <div class="loveDescription-container"></div>
-            </div>
+      <div class="modal__container">
+        <h1 class="modal__header text__center text__pink">BÓI TÌNH YÊU</h1>
+        <p class="modal__description text__center">
+          Dưới đây là kết quả của công thức mà Dr.Love đã phát minh ra!
+        </p>
+        <div class="modal__content">
+          <p class="modal__name hidden" id="modal__name-1">Nguyễn Huy Hoàng</p>
+          <div class="modal__heart">
+            <img
+              src="https://cdn.glitch.global/3a03aad6-0dd0-4c7f-bee5-32acf31fffed/heart.png?v=1690686164806"
+              alt="traitim"
+              class="modal__heart"
+            />
+            <div class="modal__heart-percent calculating">Đang tính...</div>
+          </div>
+          <p class="modal__name hidden" id="modal__name-2">Vũ Phương Chi</p>
         </div>
+        <button class="tryAgain hidden">Thử lại</button>
+        <div class="loveDescription">
+          <h2 class="loveDescription__header text__center">
+            Dưới đây là những nhận xét của Dr.Love
+          </h2>
+          <div class="loveDescription-container"></div>
+        </div>
+      </div>
     </div>
     <script src="./main.js"></script>
-</body>
+  </body>
 </html>

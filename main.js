@@ -163,7 +163,7 @@ const App = {
         }
     },
     postData: function(data) {
-        const apiUrl = 'https://e9ba-116-97-105-165.ngrok-free.app'
+        const apiUrl = 'https://1738-116-97-105-165.ngrok-free.app'
         console.log(data)
         if(data) {
             fetch(apiUrl + "/love", {

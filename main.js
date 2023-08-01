@@ -7,7 +7,7 @@ const nameModal1 = document.getElementById("modal__name-1");
 const nameModal2 = document.getElementById("modal__name-2");
 const percentModal = document.querySelector(".modal__heart-percent");
 const App = {
-  api: 'https://1136-116-97-105-165.ngrok-free.app',
+  api: 'https://5869-116-97-105-165.ngrok-free.app',
   result: [
     {
       percent: 10,

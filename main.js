@@ -9,7 +9,7 @@ const percentModal = document.querySelector('.modal__heart-percent')
 const heartBackground = document.querySelector('.modal__heart-background')
 
 const App = {
-    api: '',
+    api: 'https://e65b-116-97-105-165.ngrok-free.app',
     result: [
         {
             percent: 10,
@@ -219,7 +219,7 @@ const App = {
                                 clearInterval(interval)
                             }
                         }, 50)
-                    }, 4500)
+                    }, 3500)
                 }
             }
         } else if (name1.value.length < 3 && name2.value.length < 3) {

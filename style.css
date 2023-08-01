@@ -189,7 +189,7 @@
   align-items: center;
 }
 .modal__heart {
-    margin: 0 10px;
+    margin: 0;
     user-select: none;
     position: relative;
     z-index: 1;
@@ -222,10 +222,10 @@
 .modal__name {
   position: relative;
   color: #7e4d7e;
-  font-size: 19px;
+  font-size: 24px;
   line-height: 25px;
   font-weight: 800;
-  font-family: "Hanken Grotesk";
+  font-family: 'Dancing Script', cursive;
   width: 21%;
   text-align: center;
   user-select: none;

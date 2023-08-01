@@ -58,13 +58,13 @@
   font-size: 50px;
   font-weight: 800;
   display: block;
-  color: #fff;
+  color: #ffffff;
   padding: 10px;
   letter-spacing: 2px;
 }
 .webDescription {
   font-size: 20px;
-  color: #fff;
+  color: #ffffff;
   margin-top: 20px;
 }
 .body__partition {
@@ -189,19 +189,32 @@
   align-items: center;
 }
 .modal__heart {
-  margin: 0 10px;
-  user-select: none;
-  position: relative;
+    margin: 0 10px;
+    user-select: none;
+    position: relative;
+    z-index: 1;
+}
+.modal__heart-background {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    background-color: #f06eaa;
+    width: 100%;
+    height: var(--height);
 }
 .modal__heart-percent {
-  font-size: 30px;
-  user-select: none;
-  position: absolute;
-  top: 40px;
-  -webkit-text-fill-color: #7e4d7e;
-  font-weight: 800;
-  width: 100%;
-  text-align: center;
+    font-size: 30px;
+    user-select: none;
+    position: absolute;
+    top: 40px;
+    -webkit-text-fill-color: #7e4d7e;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+.modal__heart-image {
+    position: relative;
+    user-select: none;
 }
 .modal__heart-percent.calculating {
   font-size: 20px;

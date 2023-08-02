@@ -9,7 +9,33 @@ const percentModal = document.querySelector(".modal__heart-percent");
 const heartBackground = document.querySelector(".modal__heart-background");
 
 const App = {
-  api: "https://e65b-116-97-105-165.ngrok-free.app",
+  api: "https://b91b-116-97-105-165.ngrok-free.app",
+  audio: [
+    {
+      id: 1,
+      sound: document.getElementById("sound-1"),
+      name: "Rót nước",
+    },
+    {
+      id: 2,
+      sound: document.getElementById("sound-2"),
+      name: "Chúc mừng",
+    },
+  ],
+  getSound: function (id) {
+    if (typeof id == "number") {
+      let sound;
+      App.audio.forEach((e) => {
+        if (e.id == id) {
+          sound = e;
+        }
+      });
+      if (sound) return sound;
+      else {
+        console.error("Không tồn tại sound đó");
+      }
+    }
+  },
   result: [
     {
       percent: 10,
@@ -197,12 +223,14 @@ const App = {
         };
         App.postData(data);
         if (result) {
+          let sound = App.getSound(1).sound;
           modal.classList.remove("hidden");
           nameModal1.innerText = name1.value;
           nameModal2.innerText = name2.value;
           setTimeout(() => {
             percentModal.classList.remove("calculating");
             heartBackground.classList.remove("hidden");
+            sound.play();
             let currentPercent = 0;
             let interval = setInterval(() => {
               if (currentPercent < result.percent) {
@@ -210,6 +238,7 @@ const App = {
                 heartBackground.style = `--height: ${currentPercent}%`;
                 percentModal.innerText = currentPercent + "%";
               } else {
+                sound.pause();
                 tryAgainBtn.classList.remove("hidden");
                 if (result.percent != 100) {
                   let randomNum = Math.floor(Math.random() * 10);
@@ -218,13 +247,14 @@ const App = {
                     currentPercent + randomNum
                   }%`;
                 }
+                if (result.percent >= 45) App.getSound(2).sound.play();
                 App.showParagraph(result.paragraph);
                 nameModal1.classList.remove("hidden");
                 nameModal2.classList.remove("hidden");
                 clearInterval(interval);
               }
             }, 50);
-          }, 3500);
+          }, 3000);
         }
       }
     } else if (name1.value.length < 3 && name2.value.length < 3) {

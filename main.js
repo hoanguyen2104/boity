@@ -9,7 +9,7 @@ const percentModal = document.querySelector(".modal__heart-percent");
 const heartBackground = document.querySelector(".modal__heart-background");
 
 const App = {
-  api: "https://cf1f-116-97-104-14.ngrok-free.app",
+  api: "https://def5-116-97-104-57.ngrok-free.app",
   audio: [
     {
       id: 1,

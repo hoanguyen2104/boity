@@ -9,7 +9,7 @@ const percentModal = document.querySelector(".modal__heart-percent");
 const heartBackground = document.querySelector(".modal__heart-background");
 
 const App = {
-  api: "https://def5-116-97-104-57.ngrok-free.app",
+  api: "https://67a3-116-97-105-174.ngrok-free.app",
   audio: [
     {
       id: 1,
@@ -191,7 +191,7 @@ const App = {
   postData: function (data) {
     const apiUrl = App.api;
     if (data) {
-      fetch(apiUrl + "/love", {
+      fetch(apiUrl + "/boity", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
